@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-item {
+    margin: 0 15px;
+    position: relative;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #FFD700;
+  }
+  
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    border-radius: 50%;
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    right: -15px;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(135deg, rgba(0,36,61,1) 0%, rgba(2,126,251,1) 50%, rgba(0,212,255,1) 100%);
+  }
+  
+  .scrolled .navbar {
+    background-color: #003366;
+  }
+  
+  section {
+    padding-top: 100px;
+  }
+  
+  .nav-link.active {
+    color: #FFD700;
+    font-weight: bold;
+    background-color: #003366;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  #home {
+    background-color: #f4f4f4;
+  }
+  
+  #services {
+    background-color: #e2e2e2;
+  }
+  
+  #about {
+    background-color: #d1d1d1;
+  }
+  
+  #contact {
+    background-color: #c0c0c0;
+  }
+  
+  
